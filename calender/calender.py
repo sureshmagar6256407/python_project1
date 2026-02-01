@@ -1,5 +1,3 @@
-from calendar import*  
-year   =  int(input("ENter  year :: "))  
-print(calendar(year,2,1,6,3))
-
-
+import numpy as np 
+ar = np.array([2,4])
+print(ar)
