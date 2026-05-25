@@ -1,0 +1,151 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+    display: flex;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background: #2c3e50;
+    color: white;
+    padding: 20px;
+    height: 100vh;
+}
+
+.sidebar h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    background: #34495e;
+}
+
+.sidebar ul li:hover {
+    background: #1abc9c;
+}
+
+/* Chat Section */
+.chat-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Header */
+.chat-header {
+    display: flex;
+    align-items: center;
+    background: #0a84ff;
+    color: white;
+    padding: 15px;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 50px;
+}
+
+.chat-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.username {
+    margin-left: auto;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+/* Chat Window */
+.chat-window {
+    flex: 1;
+    overflow-y: auto;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Messages */
+.message {
+    max-width: 75%;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    line-height: 1.4;
+    word-wrap: break-word;
+}
+
+.bot-message {
+    background: #e5e5ea;
+    align-self: flex-start;
+}
+
+.user-message {
+    background: #0a84ff;
+    color: white;
+    align-self: flex-end;
+}
+
+/* Input Area */
+.input-area {
+    display: flex;
+    padding: 10px;
+    background: white;
+    border-top: 1px solid #ddd;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+}
+
+button {
+    margin-left: 5px;
+    padding: 10px;
+    border: none;
+    background: #0a84ff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background: #005bb5;
+}
+
+.typing-indicator {
+    font-size: 14px;
+    color: gray;
+    font-style: italic;
+}
